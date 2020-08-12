@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Compile Include="HelloWorld.fs" />
-    <Compile Include="Tests.fs" />
+    <Compile Include="HelloWorldTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
