@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="TwoFer.fs" />
+    <Compile Include="TwoFerTests.fs" />
     <Compile Include="HelloWorld.fs" />
     <Compile Include="HelloWorldTests.fs" />
   </ItemGroup>
