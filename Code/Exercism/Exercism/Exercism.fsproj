@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Accumulate.fs" />
+    <Compile Include="AccumulateTests.fs" />
     <Compile Include="Raindrops.fs" />
     <Compile Include="RaindropsTests.fs" />
     <Compile Include="QueenAttack.fs" />
