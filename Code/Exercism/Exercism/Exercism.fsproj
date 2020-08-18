@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="SpaceAge.fs" />
+    <Compile Include="SpaceAgeTests.fs" />
     <Compile Include="Accumulate.fs" />
     <Compile Include="AccumulateTests.fs" />
     <Compile Include="Raindrops.fs" />
