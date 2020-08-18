@@ -1,11 +1,9 @@
 ﻿module Accumulate
 
+let rec private applyFunc (accumulator: 'b list) (func: 'a -> 'b) (input: 'a list): 'b list =
+    match input with
+    | [] -> accumulator
+    | head::tail -> applyFunc ((accumulator::(func head)) (func) (tail)
+
 let accumulate (func: 'a -> 'b) (input: 'a list): 'b list = 
-    let rec accumulateTo accumulator func list =      
-        match list with
-        | [] -> accumulator
-        | head::tail -> accumulateTo (func(head)::accumulator) (func) (tail)
-
-    accumulateTo [] func input 
-    |> accumulateTo [] id
-
+    applyFunc [] func input
