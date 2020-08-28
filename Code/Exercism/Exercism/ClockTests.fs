@@ -12,52 +12,52 @@ let ``On the hour`` () =
     let clock = create 8 0
     display clock |> should equal "08:00"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Past the hour`` () =
     let clock = create 11 9
     display clock |> should equal "11:09"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Midnight is zero hours`` () =
     let clock = create 24 0
     display clock |> should equal "00:00"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Hour rolls over`` () =
     let clock = create 25 0
     display clock |> should equal "01:00"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Hour rolls over continuously`` () =
     let clock = create 100 0
     display clock |> should equal "04:00"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Sixty minutes is next hour`` () =
     let clock = create 1 60
     display clock |> should equal "02:00"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Minutes roll over`` () =
     let clock = create 0 160
     display clock |> should equal "02:40"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Minutes roll over continuously`` () =
     let clock = create 0 1723
     display clock |> should equal "04:43"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Hour and minutes roll over`` () =
     let clock = create 25 160
     display clock |> should equal "03:40"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Hour and minutes roll over continuously`` () =
     let clock = create 201 3001
     display clock |> should equal "11:01"
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Hour and minutes roll over to exactly midnight`` () =
     let clock = create 72 8640
     display clock |> should equal "00:00"
