@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="GradeSchool.fs" />
+    <Compile Include="GradeSchoolTests.fs" />
     <Compile Include="SpaceAge.fs" />
     <Compile Include="SpaceAgeTests.fs" />
     <Compile Include="Accumulate.fs" />
